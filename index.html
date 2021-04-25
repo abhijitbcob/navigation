@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dropdown Navigation bar</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-container d-flex">
+            <a href="#" class="logo-link link">LOGO</a>
+            <nav>
+                <ul class="nav-list d-flex">
+                    <li class="nav-item"><a class="nav-link link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link link" href="#">About</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#">
+                            Services <i class="arrow arrow-down"></i>
+                        </a>
+
+                        <ul class="nav-dropdown">
+                            <li class="nav-dropdown__item"><a class="link" href="#">Web design</a></li>
+                            <li class="nav-dropdown__item"><a class="link" href="#">Web development</a></li>
+                            <li class="nav-dropdown__item"><a class="link" href="#">Graphic design</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link link" href="#">Pricing</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#">
+                            Portfolio <i class="arrow arrow-down"></i>
+                        </a>
+
+                        <ul class="nav-dropdown">
+                            <li class="nav-dropdown__item"><a class="link" href="#">Web design</a></li>
+                            <li class="nav-dropdown__item"><a class="link" href="#">Web development</a></li>
+                            <li class="nav-dropdown__item"><a class="link" href="#">Graphic design</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link link" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+
+</html>

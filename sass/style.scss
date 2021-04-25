@@ -1,0 +1,139 @@
+$color-black:#232323;
+$color-white:#fff;
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.arrow {
+    display: inline-block;
+    padding: 3px;
+    border-width: 2px 2px 0 0;
+    border-color: $color-white;
+    border-style: solid;
+
+    &-down {
+        transform: rotate(135deg);
+    }
+}
+
+.header {
+    padding-inline: 1rem .5rem;
+    background-color: $color-black;
+
+    @media only screen and (min-width:600px) {
+        padding: 1rem 2.5rem;
+    }
+}
+
+
+
+.nav-container {
+    max-width: 111rem;
+    margin: 0 auto;
+}
+
+
+.d-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media only screen and (min-width:800px) {
+        flex-direction: row;
+        align-items: center;
+    }
+
+}
+
+
+
+.nav-item {
+    position: relative;
+
+    &::marker {
+        content: '';
+    }
+
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: $color-white;
+    font-weight: 400;
+}
+
+
+.nav-link:link,
+.nav-link:visited,
+.logo-link {
+    padding: 1.5rem 1.5rem;
+
+    @media only screen and (min-width:600px) {
+        padding: 2.5rem 1.5rem;
+    }
+
+}
+
+
+.nav-item:hover,
+.nav-dropdown__item:hover {
+    transition: all .2s;
+    cursor: pointer;
+    background-color: #3636fc;
+}
+
+
+.nav-link {
+    i {
+        position: relative;
+        left: 2px;
+        top: -2px;
+    }
+}
+
+
+.nav-dropdown {
+    position: relative;
+    background-color: $color-black;
+    list-style: none;
+    display: grid;
+    grid-template-columns: max-content;
+
+    @media only screen and (min-width:800px) {
+        position: absolute;
+    }
+
+
+    &__item {
+        padding: 1.5rem;
+        padding-left: 3rem;
+        min-width: 19rem;
+
+        @media only screen and (min-width:800px) {
+            padding: 1.5rem;
+        }
+
+    }
+}
