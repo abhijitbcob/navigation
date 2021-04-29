@@ -118,7 +118,7 @@ body {
     position: relative;
     background-color: $color-black;
     list-style: none;
-    display: grid;
+    display: none;
     grid-template-columns: max-content;
 
     @media only screen and (min-width:800px) {
@@ -136,4 +136,9 @@ body {
         }
 
     }
+}
+
+
+.show {
+    display: grid;
 }
